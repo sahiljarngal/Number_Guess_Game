@@ -1,0 +1,204 @@
+/* UNIVERSAL SELECTOR */
+*{
+        margin: 0;
+        padding:0;
+}
+/* GIVE FONT TO WHOLE HTML DOCUMENT */
+html{
+        font-size: 67%;
+        box-sizing: border-box;
+}
+
+body{
+        font-family: 'Black Ops One', cursive;
+        font-weight: bolder;
+      background-color: #101820FF;
+}
+/* UPPER PORTION OF THE GAME */
+header{
+        position: relative;
+        height: 40vh;
+        border-bottom: 2px solid #FEE715FF;
+}
+h1{
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-size: 5rem;
+        top: 25%;
+       color: #FEE715FF;
+}
+.between{
+        position: absolute;
+        width: 100%;
+        text-align: end;
+        top: 1rem;
+        right:1rem;
+        font-size: 1.5rem;
+        color: #FEE715FF;
+}
+.guess{
+        position:absolute;
+        background-color:#FEE715FF;
+        text-align: center;
+        font-size: 5rem;
+        width: 10rem;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%,50%);
+}
+.again{
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+}
+/* # BOTTOM PORTION OF THE GAME */
+main{
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+.left{
+        width: 40rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+}
+ .right{
+                width: 40rem;
+                font-size:2rem ;
+       }
+
+
+.number{
+       background: none;
+       border: 4px solid #FEE715FF;
+       text-align: center;
+       width: 15rem;
+       display: block;
+       font-size: 4rem;
+       padding: 2rem;
+       margin-bottom: 4rem;
+       outline: none;
+       font-family: inherit;
+       color: azure;
+}
+input::placeholder{
+        color: #FEE715FF;
+}
+.message{
+        margin-bottom: 2rem;
+        height: 6rem;
+        font-size: 2.5rem;
+        color: #FEE715FF;
+}
+.label_score{
+        margin-bottom: 1rem;
+        color: #FEE715FF;
+}
+.higher_score{
+        color: #FEE715FF;
+}
+
+/* # BUTTOM DESIGN AND HOVER EFFECT */
+.btn{
+        font-size: 2rem;
+        cursor: pointer;
+        border: none;
+        background-color:#FEE715FF;
+        padding: 2rem 3rem;
+        font-family: inherit;
+        color:#101820FF
+}
+.btn:hover{
+        background-color: azure;
+}
+
+
+/* RESPONSIVE SETTING  */
+@media screen and (max-width: 800px) {
+        html{
+                font-size: 36%;
+        }
+        
+        .left{
+                width: 40rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              
+        }
+                .right{
+                        width: 40rem;
+                        font-size:2rem ;
+                }
+        
+        /* UPPER SIDE SETTING */
+                h1{
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                font-size: 5rem;
+                top: 25%;
+               
+        }
+        .between{
+                position: absolute;
+                width: 100%;
+                text-align: end;
+                top: 1rem;
+                right:1rem;
+                font-size: 1.7rem;
+        }
+        .guess{
+                position:absolute;
+                background-color: #FEE715FF;
+                text-align: center;
+                font-size: 5rem;
+                width: 10rem;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%,50%);
+        }
+        .again{
+              position: absolute;
+              top: 1rem;
+              left: 1rem;
+        }
+        /* # LOWER SIDE SETTING */
+        .number{
+               background: none;
+               border: 4px solid #FEE715FF;
+               text-align: center;
+               width: 10rem;
+               display: block;
+               font-size: 4rem;
+               padding: 2rem;
+               margin-bottom: 4rem;
+               outline: none;
+               font-family: inherit;
+               
+        }
+        .btn{
+                font-size:1.5rem;
+                cursor: pointer;
+                border: none;
+                background-color:#FEE715FF;
+                padding: 1.5rem 2.5rem;
+                font-family: inherit;
+        }
+        .btn:hover{
+                background-color: azure;
+        }
+        .message{
+                margin-bottom: 2rem;
+                height: 6rem;
+                font-size: 2.1rem;
+        }
+        .label_score{
+                margin-bottom: 1rem;
+                
+        }
+}
